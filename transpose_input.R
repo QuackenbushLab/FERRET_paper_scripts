@@ -1,6 +1,6 @@
 # Directories
-split_dir <- "/home/ubuntu/CPTAC_single_cell_splits_subset_pca"
-transpose_split_dir <- "/home/ubuntu/CPTAC_single_cell_splits_subset_pca_t"
+split_dir <- NULL
+transpose_split_dir <- NULL
 
 # For all files, project onto PC's.
 for(i in list.files(split_dir)){

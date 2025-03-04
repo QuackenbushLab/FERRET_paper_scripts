@@ -276,7 +276,9 @@ Run **evaluate_ChIPseq.R**, setting the following variables:
 
 #### GRISLI
 
-1. Transpose the files. FIND SCRIPT
+1. Run **transpose_input.R** to transpose the data, setting the following variables:
+    -  **split_dir:** The path to the directory containing the splits
+    -  **transpose_split_dir:** The path to where you wish to store the transposed split files
 2. Run `./run_grisli_parallel.sh`, which calls **run_grisli_single.m**, setting the following variables:
     -  **EXPRESSION_DIR:** The path to the directory containing the transposed expression data
     -  **PSEUDOTIME_DIR:** The path to the directory containing the pseudotime data
