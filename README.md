@@ -307,7 +307,11 @@ Run `./run_scgenerai_parallel.sh`, which calls **scgenerai_run_single.py**, sett
 
 #### LEAP
 
-FILL IN
+Run `./run_LEAP_parallel.sh`, which calls **run_LEAP_single.py**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory containing the transposed expression data
+-  **PSEUDOTIME_DIR:** The path to the directory containing the pseudotime data
+-  **OUTPUT_DIR:** The path to the directory where you want the output GRNs to be saved
+-  **LOGGING_DIR:** The path to the directory where you want the logs to be saved
 
 #### SINGE
 

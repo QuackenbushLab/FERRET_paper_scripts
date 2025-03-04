@@ -2,10 +2,10 @@
 
 # File paths
 echo hello
-EXPRESSION_DIR="../CPTAC_single_cell_splits_subset_pca_t/"
-PSEUDOTIME_DIR="../CPTAC_single_cell_splits_subset_pseudotime/"
-OUTPUT_DIR="../LEAP_CPTAC/"
-LOGGING_DIR="../LEAP_CPTAC_logs/"
+EXPRESSION_DIR=""
+PSEUDOTIME_DIR=""
+OUTPUT_DIR=""
+LOGGING_DIR=""
 echo $LOGGING_DIR
 # For each file in the expression directory, run Panda and save results.
 # Create a function that runs the next process only when memory is available.
