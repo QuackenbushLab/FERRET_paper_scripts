@@ -1,8 +1,9 @@
 #!/bin/bash
 
 # File paths
-EXPRESSION_DIR="../../CPTAC_single_cell_splits_subset_pca/"
-cd "../SINGE/SINGE"
+EXPRESSION_DIR=""
+SINGE_DIR=""
+cd $SINGE_DIR
 # For each file in the expression directory, run Panda and save results.
 # Create a function that runs the next process only when memory is available.
 check_memory_and_run() {

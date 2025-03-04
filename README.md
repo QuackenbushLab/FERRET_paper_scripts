@@ -308,7 +308,10 @@ FILL IN
 
 #### SINGE
 
-FILL IN
+Run `./run_singe_parallel.sh`, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory containing the transposed expression data
+-  **SINGE_DIR:** The path to the directory where SINGE is installed
+
 
 ### Evaluating Performance Using FERRET
 1. Run **format_PIDC_results_for_FERRET.R**, setting the following variables:
