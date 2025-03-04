@@ -388,10 +388,6 @@ Run **consolidate_AUC_by_cell_type_CPTAC.R**, changing the following variables:
 -  **indegree_plot:** Path to the PDF file where you wish to plot In-Degree bars
 -  **outdegree_plot:** Path to the PDF file where you wish to plot Out-Degree bars
 
-## Running Time Evaluation for HTAN
-
-FILL IN
-
 
 ## HTAN FERRET Evaluation
 
@@ -399,11 +395,28 @@ FILL IN
 
 #### SCORPION
 
-FILL IN
+1. Download Grand [TF binding](https://granddb.s3.amazonaws.com/tissues/motif/tissues_motif.txt) and [PPI](https://granddb.s3.amazonaws.com/tissues/ppi/tissues_ppi.txt) files.
+2. Modify the following **run_scorpion.R** variables:
+    -  **motif_file:** Path to the TF binding motif file
+    -  **ppi_file:** Path to the PPI file
+3. Run **./run_scorpion_HTAN.sh**, setting the following variables:
+    -  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+    -  **OUTPUT_DIR:** The path to the directory where you wish to store the output
+    -  **LOGGING_DIR:** The path to the directory where you wish to store the logs
 
 #### SCENIC
 
-FILL IN
+1. In R, launch the following commands to install SCENIC and save the SCENIC RMD file:
+```
+if(!require("SCENIC")){  devtools::install_github("aertslab/SCENIC") }
+vignetteFile <- file.path(system.file('doc', package='SCENIC'), "SCENIC_Running.Rmd")file.copy(vignetteFile, "SCENIC_myRun.Rmd")
+```
+2. Download the [motif database](https://resources.aertslab.org/cistarget/databases/old/homo_sapiens/hg19/refseq_r45/mc9nr/gene_based/).
+3. Modify the following variables in **run_scenic.R**:
+    -  **cisTarget_database_dir:** Path to directory where you downloaded the motif database.
+4. Run **./run_scenic_HTAN.sh**, setting the following variables:
+    -  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+    -  **OUTPUT_DIR:** The path to the directory where you wish to store the output
 
 ### Evaluating Performance Using FERRET
 
@@ -413,7 +426,12 @@ Run **run_FERRET_HTAN_AWS.R**, setting the following variables:
 
 ### Evaluating Pathways
 
-1. PATHWAY ANALYSIS SCRIPT
+1. Run **make_pathways_plot_HTAN.R**, setting the following variables:
+    -  **GMT:** The path to the GMT pathway file
+    -  **network_dir_SCORPION:** The path to the directory that has the SCORPION networks
+    -  **network_dir_SCENIC:** The path to the directory that has the SCENIC networks
+    -  **pathway_dir_SCORPION:** The path to the directory where you wish to store the SCORPION pathways
+    -  **pathway_dir_SCENIC:** The path to the directory where you wish to store the SCENIC pathways
 2. Run **pathway_frequency_HTAN_cellTypePairs.R**, to compute the frequency of pathway enrichment when compared across two cell types, setting the following variables:
     -  **pathway_dir_SCORPION:** The path to the directory containing the pathway results for SCORPION
     -  **pathway_dir_SCENIC:** The path to the directory containing the pathway results for SCENIC
@@ -431,3 +449,7 @@ Run **consolidate_AUC_by_cell_type_HTAN.R**, changing the following variables:
 -  **jaccard_plot:** Path to the PDF file where you wish to plot Jaccard bars
 -  **indegree_plot:** Path to the PDF file where you wish to plot In-Degree bars
 -  **outdegree_plot:** Path to the PDF file where you wish to plot Out-Degree bars
+
+## Running Time Evaluation for HTAN
+
+FILL IN
