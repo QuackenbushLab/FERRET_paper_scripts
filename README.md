@@ -294,7 +294,10 @@ Run `./run_PIDC_parallel.sh`, which calls **runPIDCsingle.jl**, setting the foll
 
 #### scSGL
 
-FILL IN
+Run `./run_scsgl_parallel.sh`, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory containing the expression data
+-  **OUTPUT_DIR:** The path to the directory where you want the output GRNs to be saved
+-  **LOGGING_DIR:** The path to the directory where you want the logs to be saved
 
 #### scGeneRai
 Run `./run_scgenerai_parallel.sh`, which calls **scgenerai_run_single.py**, setting the following variables:

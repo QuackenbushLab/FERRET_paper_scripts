@@ -1,9 +1,9 @@
 #!/bin/bash
 
 # File paths
-EXPRESSION_DIR="../CPTAC_single_cell_splits_subset_pca/"
-OUTPUT_DIR="../scSGL_CPTAC_subset_leftover/"
-LOGGING_DIR="../scSGL_CPTAC_log_subset/"
+EXPRESSION_DIR=""
+OUTPUT_DIR=""
+LOGGING_DIR=""
 
 # For each file in the expression directory, run Panda and save results.
 # Create a function that runs the next process only when memory is available.
