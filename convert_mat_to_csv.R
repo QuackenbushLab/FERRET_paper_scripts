@@ -3,8 +3,8 @@ if(!require("R.matlab")){
 }
 library("R.matlab")
 
-matPath = "/home/ubuntu/SINGE/SINGE"
-outputPath = "/home/ubuntu/SINGE_csv"
+matPath = NULL
+outputPath = NULL
 dir.create(outputPath)
 
 # Loop through each file and process it

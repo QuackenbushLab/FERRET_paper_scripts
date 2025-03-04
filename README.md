@@ -322,6 +322,9 @@ Run `./run_LEAP_parallel.sh`, which calls **run_LEAP_single.py**, setting the fo
 2. Run `./run_singe_parallel.sh`, setting the following variables:
     -  **EXPRESSION_DIR:** The path to the directory containing the expression data formatted for SINGE
     -  **SINGE_DIR:** The path to the directory where SINGE is installed
+3. Run **convert_mat_to_csv.R**, setting the following variables:
+    -  **matPath:** The path where SINGE is installed
+    -  **outputPath:** The path where you wish to save the CSV files
 
 
 ### Evaluating Performance Using FERRET
