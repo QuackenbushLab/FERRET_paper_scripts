@@ -315,9 +315,13 @@ Run `./run_LEAP_parallel.sh`, which calls **run_LEAP_single.py**, setting the fo
 
 #### SINGE
 
-Run `./run_singe_parallel.sh`, setting the following variables:
--  **EXPRESSION_DIR:** The path to the directory containing the transposed expression data
--  **SINGE_DIR:** The path to the directory where SINGE is installed
+1. Run **make_mat_files_singe.R**, setting the following variables:
+    -  **expressionPath:** The path to the transposed expression data
+    -  **pseudotimePath:** The path to the pseudotime data
+    -  **outputPath:** The path where you wish to save the formatted data
+2. Run `./run_singe_parallel.sh`, setting the following variables:
+    -  **EXPRESSION_DIR:** The path to the directory containing the expression data formatted for SINGE
+    -  **SINGE_DIR:** The path to the directory where SINGE is installed
 
 
 ### Evaluating Performance Using FERRET

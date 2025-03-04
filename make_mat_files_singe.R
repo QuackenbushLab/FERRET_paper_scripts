@@ -3,9 +3,9 @@ if(!require("R.matlab")){
 }
 library("R.matlab")
 
-expressionPath = '/home/ubuntu/CPTAC_single_cell_splits_subset_pca_t/'
-pseudotimePath = "/home/ubuntu/CPTAC_single_cell_splits_subset_pseudotime/"
-outputPath = "/home/ubuntu/CPTAC_single_cell_splits_mat_singe"
+expressionPath = NULL
+pseudotimePath = NULL
+outputPath = NULL
 dir.create(outputPath)
 
 # Loop through each file and process it
