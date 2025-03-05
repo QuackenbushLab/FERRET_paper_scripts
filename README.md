@@ -452,4 +452,47 @@ Run **consolidate_AUC_by_cell_type_HTAN.R**, changing the following variables:
 
 ## Running Time Evaluation for HTAN
 
-FILL IN
+### GRISLI
+
+Run **./run_grisli_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **PSEUDOTIME_DIR:** The path to the directory where the pseudotime data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
+-  **GRISLI_DIR:** The path where GRISLI is stored
+
+### LEAP
+
+Run **./run_LEAP_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **PSEUDOTIME_DIR:** The path to the directory where the pseudotime data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
+
+### PIDC
+
+Run **./run_PIDC_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
+
+### SCENIC
+
+Run **./run_SCENIC_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
+
+### scGeneRai
+
+Run **./run_scgenerai_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
+
+### SCORPION
+
+Run **./run_scorpion_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
+
+### scSGL
+
+Run **./run_scsgl_testsingle_HTAN.sh**, setting the following variables:
+-  **EXPRESSION_DIR:** The path to the directory where the expression data are stored
+-  **OUTPUT_DIR:** The path where you wish to store the output
