@@ -279,7 +279,11 @@ Run **evaluate_ChIPseq.R**, setting the following variables:
 1. Run **transpose_input.R** to transpose the data, setting the following variables:
     -  **split_dir:** The path to the directory containing the splits
     -  **transpose_split_dir:** The path to where you wish to store the transposed split files
-2. Run `./run_grisli_parallel.sh`, which calls **run_grisli_single.m**, setting the following variables:
+2. In the file **run_grisli_single.m**, change the following line as needed to include the installation path:
+   ```
+   addpath('/home/ubuntu/GRISLI/GRISLI/');
+   ```
+3. Run `./run_grisli_parallel.sh`, which calls **run_grisli_single.m**, setting the following variables:
     -  **EXPRESSION_DIR:** The path to the directory containing the transposed expression data
     -  **PSEUDOTIME_DIR:** The path to the directory containing the pseudotime data
     -  **OUTPUT_DIR:** The path to the directory where you want the output GRNs to be saved
@@ -288,7 +292,7 @@ Run **evaluate_ChIPseq.R**, setting the following variables:
 
 #### PIDC
 Run `./run_PIDC_parallel.sh`, which calls **runPIDCsingle.jl**, setting the following variables:
--  **EXPRESSION_DIR:** The path to the directory containing the expression data
+-  **EXPRESSION_DIR:** The path to the directory containing the transposed expression data
 -  **OUTPUT_DIR:** The path to the directory where you want the output GRNs to be saved
 -  **LOGGING_DIR:** The path to the directory where you want the logs to be saved
 
