@@ -268,7 +268,12 @@ Run **evaluate_ChIPseq.R**, setting the following variables:
     -  **inputDir:** The path to the directory where you wish to store the random networks
     -  **outputDir:** The path to the directory where you wish to store the FERRET results
 2. Run **consolidate_AUC_random.R**, setting the following variables:
-    -  **outputDir:** The path to the directory where the FERRET results are stored
+    -  **outputDir:** The path to the directory where the FERRET results from the original random networks are stored
+3. Run **run_FERRET_on_random_networks_bipartite.R**, setting the following variables:
+    -  **inputDir:** The path to the directory where the random networks from step 1 are stored
+    -  **outputDir:** The path to the directory where you wish to store the FERRET results
+2. Run **consolidate_AUC_random.R**, setting the following variables:
+    -  **outputDir:** The path to the directory where the FERRET results from the bipartite random networks are stored
 
 ## CPTAC FERRET Evaluation
 

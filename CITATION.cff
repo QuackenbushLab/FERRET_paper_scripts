@@ -1,0 +1,10 @@
+cff-version: 1.0.0
+message: "Software licence"
+title: "FERRET"
+version: "1.0.0"
+date-released: "2026-07-27"
+authors:
+  - family-names: "Eicher"
+    given-names: "Tara"
+repository-code: "https://github.com/QuackenbushLab/FERRET"
+license: "MIT"
